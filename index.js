@@ -2,21 +2,22 @@
 //player and computer score count
 let playerScore = 0;
 let computerScore = 0;
-// score converter section
-let randomChoice = Math.floor(Math.random() * 3) + 1;
-// let playerSelection = prompt('Choose rock, paper, or scissors'). toLowerCase();
-let computerSelection = getComputerChoice();
 
 function getComputerChoice(randomChoice) {
-    if (randomChoice = 1) {
+    randomChoice = Math.floor(Math.random() * 3) + 1;
+    if (randomChoice === 1) {
         return 'Rock';
-    } else if (randomChoice = 2){
+    } else if (randomChoice === 2){
         return 'Paper';
     } else {
         return 'Scissors'
     }
 }
-console.log(randomChoice);
-console.log(getComputerChoice());
+let computerSelection = getComputerChoice();
+let playerSelection = prompt('Choose rock, paper, or scissors').toLowerCase();
 
-// generator works but not getComputerChoice
+console.log('computerchoice function ' + getComputerChoice());
+
+function playRound(playerSelection, computerSelection) {
+    // put a bunch of if else statements
+  }
