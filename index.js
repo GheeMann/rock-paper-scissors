@@ -1,8 +1,9 @@
 "use strict";
-//player and computer score count
-let playerScore = 0;
+//human and computer score count
+let humanScore = 0;
 let computerScore = 0;
 
+//Needed functions for game
 function getComputerChoice(randomChoice) {
     randomChoice = Math.floor(Math.random() * 3) + 1;
     if (randomChoice === 1) {
@@ -13,11 +14,15 @@ function getComputerChoice(randomChoice) {
         return 'Scissors'
     }
 }
+function getHumanChoice(){
+    let humanDecision = prompt('Choose rock, paper, or scissors').toLowerCase();
+    console.log(humanDecision);
+    return humanDecision;
+}
+
 let computerSelection = getComputerChoice();
-let playerSelection = prompt('Choose rock, paper, or scissors').toLowerCase();
+console.log('getComputerChoice() function says:' + getComputerChoice());
 
-console.log('computerchoice function ' + getComputerChoice());
-
-function playRound(playerSelection, computerSelection) {
+function playRound(getHumanChoice, computerSelection) {
     // put a bunch of if else statements
   }
