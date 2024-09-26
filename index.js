@@ -74,5 +74,15 @@ function playRound(humanChoice, computerChoice) {
         console.log(`Marker: Computer: ${computerScore}, You: ${humanScore}`)
     }
   }
+  
+playGame();
 
-  playGame();
+if (computerScore > humanScore) { //Declares Game Winner
+    alert("You Lose! Refresh page to try again");
+  }
+  else if (computerScore < humanScore){
+    alert("You Win! Congratulations!");
+  }
+  else {
+    alert("It's a Tie! Refresh page to try again!");
+  }
