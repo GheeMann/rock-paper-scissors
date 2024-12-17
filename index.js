@@ -86,3 +86,9 @@ if (computerScore > humanScore) { //Declares Game Winner
   else {
     alert("It's a Tie! Refresh page to try again!");
   }
+function alertFunction() {
+    alert("YES! Now you are ready for the next task.");
+}
+
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", alertFunction);
